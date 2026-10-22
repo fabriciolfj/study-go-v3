@@ -5,6 +5,7 @@ services:
     image: mockserver/mockserver:latest
     ports:
       - "9000:1080"
+      - "8080:1080"
     environment:
       MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializerJson.json
     volumes:

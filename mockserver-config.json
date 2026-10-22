@@ -1,4 +1,3 @@
-// mockserver-config.json
 [
   {
     "httpRequest": {
@@ -13,7 +12,7 @@
         ]
       },
       "body": {
-        "monthlyIncome": 4500.00,
+        "monthlyIncome": 4500.0,
         "currentDebtRatio": 15.5,
         "creditScore": 720,
         "defaultHistory": {
@@ -38,7 +37,7 @@
         ]
       },
       "body": {
-        "monthlyIncome": 4500.00,
+        "monthlyIncome": 4500.0,
         "currentDebtRatio": 15.5,
         "creditScore": 720,
         "defaultHistory": {
@@ -47,6 +46,29 @@
           "maxDelayDays": 0,
           "hasActiveRestrictions": false
         }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/test"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "ID": "8f14e45f-ceea-4e7a-9c1b-2d3c4b5a6f70",
+        "MerchantId": "001",
+        "Endpoint": "http://localhost:8080/test",
+        "Payload": null,
+        "Attempts": 1,
+        "Status": "SEND",
+        "Error": null
       }
     }
   }
